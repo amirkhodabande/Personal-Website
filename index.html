@@ -586,19 +586,30 @@
         <span class="w-full h-full absolute bg-gray-900 z-0" style="opacity: 50%"></span>
         <div class=" py-16">
             <!-- Start Time Line Wrapper-->
-            <header class="text-white text-lg font-bold w-6/12 mx-auto flex justify-center">
-                <div class="mx-12 uppercase z-10">
-                    <p class="text-center"><i class="fas fa-university text-orange-600"></i></p>
+            <!-- Start Header for lg-->
+            <header class="hidden lg:flex lg:justify-center text-white text-lg font-bold w-6/12 mx-auto">
+                <div class="mx-12 uppercase text-center z-10">
+                    <p><i class="fas fa-university text-orange-600"></i></p>
                     <p class="text-orange-400">Education</p>
                 </div>
-                <div class="mx-12 uppercase z-10">
-                    <p class="text-center"><i class="fas fa-laptop-code text-orange-600"></i></p>
+                <div class="mx-12 uppercase text-center z-10">
+                    <p><i class="fas fa-laptop-code text-orange-600"></i></p>
                     <p class="text-orange-400">Experiences</p>
                 </div>
             </header>
-            <div class="relative px-20 mx-20 text-white border-t flex flex-wrap justify-between">
+            <!-- End Header for lg-->
+
+            <div class="relative pl-5 lg:pl-0 lg:px-20 lg:mx-20 text-white border-t-0 lg:border-t flex flex-wrap justify-between">
                 <!-- Start Education-LeftSide -->
-                <aside class="w-5/12 text-right">
+                <aside class="w-full lg:w-5/12 lg:text-right">
+                    <!-- Start Header for Education in small screens-->
+                    <header class=" lg:hidden my-3 text-white text-lg font-bold w-full">
+                        <div class="mx-12 uppercase text-center z-10">
+                            <p><i class="fas fa-university text-orange-600"></i></p>
+                            <p class="text-orange-400">Education</p>
+                        </div>
+                    </header>
+                    <!-- End Header for Education in small screens-->
                     <div class="mt-5">
                         <p class="text-lg font-semibold">Software Engineering Associate Degree</p>
                         <p>Enghelab Eslami Technical College</p>
@@ -618,13 +629,21 @@
                 <!-- End Education-LeftSide -->
 
                 <!-- Start The Center Border-->
-                <aside class="w-1/12 flex justify-center">
+                <aside class="hidden lg:flex lg:justify-center w-1/12">
                     <div class="h-full border-r"></div>
                 </aside>
                 <!-- End The Center Border-->
 
                 <!-- Start Experiences -->
-                <aside class="w-5/12">
+                <aside class="w-full lg:w-5/12">
+                    <!-- Start Header for Experiences in small screens-->
+                    <header class=" lg:hidden mt-20 text-white text-lg font-bold w-full">
+                        <div class="mx-12 uppercase text-center z-10">
+                            <p><i class="fas fa-university text-orange-600"></i></p>
+                            <p class="text-orange-400">Experiences</p>
+                        </div>
+                    </header>
+                    <!-- End Header for Experiences in small screens-->
                     <div class="mt-5">
                         <p class="text-lg font-semibold">Full Stack Web Developer at <a href="https://skato.ir/" target="_blank">skato.ir</a></p>
                         <ul class="text-sm list-disc list-inside">
@@ -639,7 +658,7 @@
                     <div class="mt-5">
                         <p class="text-lg font-semibold">Open Source Developer at <a href="https://github.com/amirkhodabande/" target="_blank">github.com</a></p>
                         <p class="text-sm">When I learn some thing new, I try to build some cool projects about it, then I push it to the github.</p>
-                        <p class="text-sm">I do this with <i class="fas fa-heart text-red-400"></i></p>
+                        <p class="text-sm">I do this with my <i class="fas fa-heart text-red-400"></i></p>
                         <p class="text-orange-400 mt-2">9/2020 - PRESENT</p>
                         <p class="border-t border-orange-100 mr-0"></p>
                     </div>
